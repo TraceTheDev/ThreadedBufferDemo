@@ -2,7 +2,7 @@ package p1;
 
 import java.util.Random;
 
-class Main {
+class ThreadedBuffer {
 	public static void main(String[] args) {
 		
 		Buffer buffer = new Buffer(new int[10]);
