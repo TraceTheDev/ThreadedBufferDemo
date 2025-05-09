@@ -1,49 +1,43 @@
-# ThreadedBufferDemo
+# BufferPractice
 
-A Java program that simulates the producer-consumer problem using a synchronized buffer shared between two threads. It demonstrates multithreading and real-time tracking of buffer activity.
+A simple Java-based multithreaded program that simulates the producer-consumer problem using a synchronized buffer. This project demonstrates thread coordination, shared memory access, and buffer state tracking in real time. Ideal for learning basic concurrency and thread safety in Java.
 
 ---
 
 ## Project Structure
 
 ```
-ThreadedBufferDemo/
+BufferPractice/
 ├── src/
 │   └── p1/
-│       └── Main.java         # Contains ProducerTask, ConsumerTask, Buffer, and 
+│       └── Main.java
 └──
 ```
 
 ---
 
-## Key Components
+## Core Java Classes
 
 ### `Main.java`
-- Initializes a buffer of size 10.
-- Launches two threads: one producer and one consumer.
-- Demonstrates thread synchronization with `wait()` and `notify()`.
-
-### `Buffer`
-- A shared array buffer accessed by both producer and consumer threads.
-- Uses synchronized methods to ensure safe access and control flow.
-- Randomly determines the number of items to produce or consume.
-  
-### `ProducerTask` / `ConsumerTask`
-- Runnable tasks that repeatedly call the buffer's produce or consume methods.
-- Simulates thread behavior with sleep delays and conditional handling of full/empty buffer scenarios.
+Contains all logic for:
+- Initializing a fixed-size buffer
+- Running one producer and one consumer thread
+- Displaying real-time buffer activity to the console
 
 ---
 
 ## How to Run
 
-1. Open the project in an IDE like **Eclipse** or **IntelliJ**.
-2. Ensure Java SE 17 is set as the project SDK.
-3. Run the `Main.java` file from package `p1`.
+Compile and run using any Java-compatible IDE (like Eclipse or IntelliJ), or from the command line:
+
+```bash
+javac src/p1/Main.java
+java -cp src p1.Main
+```
 
 ---
 
-## Future Ideas
-
+## Future Enhancements
 - Add a GUI visualization of buffer activity.
 - Support multiple producer and consumer threads.
 - Implement logging to track statistics like total items produced and consumed.
