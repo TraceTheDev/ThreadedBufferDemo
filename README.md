@@ -1,4 +1,4 @@
-# BufferPractice
+# ThreadedBufferDemo
 
 A simple Java-based multithreaded program that simulates the producer-consumer problem using a synchronized buffer. This project demonstrates thread coordination, shared memory access, and buffer state tracking in real time. Ideal for learning basic concurrency and thread safety in Java.
 
